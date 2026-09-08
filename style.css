@@ -1,0 +1,294 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 12px;
+}
+
+a { color: #0033cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Header & Logo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.logo-area h1 {
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+.black-text { color: #000; }
+.red-box {
+    background-color: #cc0000;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 2px;
+}
+.slogan {
+    font-size: 10px;
+    color: #666;
+    display: block;
+    margin-top: 2px;
+}
+
+.top-links { font-size: 11px; margin-top: 10px; }
+.top-links a { margin: 0 4px; }
+
+/* Navegação e Abas */
+.tabs {
+    display: flex;
+    border-bottom: 3px solid #ddd;
+    position: relative;
+}
+
+.tab {
+    padding: 6px 20px;
+    background: linear-gradient(to bottom, #f0f4f9, #c3d4ee);
+    border: 1px solid #a4bde5;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #0033cc;
+}
+
+.tab.active {
+    background: #e5e5e5;
+    border-color: #ccc;
+    color: #333;
+}
+
+.upload-btn {
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    padding: 6px 15px;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    background: linear-gradient(to bottom, #e5e5e5, #cccccc);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #bbb;
+    border-top: none;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 3px;
+    border: 1px solid #999;
+}
+
+.search-bar button {
+    padding: 3px 10px;
+    margin-left: 5px;
+    border: 1px solid #999;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Layout Principal */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Coluna da Esquerda */
+.video-section {
+    width: 480px;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.video-player {
+    width: 100%;
+    height: 360px;
+    background-color: #000;
+    border: 1px solid #999;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Elementos Analógicos no Player */
+.static-screen {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: repeating-linear-gradient(
+        0deg,
+        #111,
+        #111 2px,
+        #333 2px,
+        #333 4px
+    );
+}
+
+.creepy-text {
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 150px;
+    letter-spacing: 2px;
+    text-shadow: 2px 0 0 red, -2px 0 0 blue; /* Efeito Glitch */
+}
+
+.controls {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.video-actions {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars { color: #cc0000; font-size: 16px; }
+
+/* Coluna da Direita */
+.sidebar {
+    width: 300px;
+}
+
+.info-box {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.info-header {
+    background-color: #ffffee;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-body {
+    padding: 10px;
+    background: #fff;
+    line-height: 1.4;
+}
+
+.desc { margin: 10px 0; font-style: italic; color: #555;}
+
+.related-videos {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.related-tabs {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.active-rel {
+    font-weight: bold;
+    background: #ccc;
+    padding: 2px 5px;
+}
+
+.video-item {
+    display: flex;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.thumb {
+    width: 90px;
+    height: 70px;
+    background-color: #000;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+
+/* Thumbs Assustadoras simuladas */
+.creepy-thumb1 { background: radial-gradient(circle, #555, #000); }
+.creepy-thumb2 { background: repeating-radial-gradient(#222, #000 10%); }
+
+.details p {
+    color: #666;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+/* Página de Canais */
+.page-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.channel-list { display: flex; flex-direction: column; gap: 15px; }
+
+.channel-card {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+.channel-avatar {
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 2px solid #000;
+}
+
+.channel-info { flex-grow: 1; }
+.channel-info h3 { margin-bottom: 5px; font-size: 16px; }
+.channel-info p { color: #444; margin-bottom: 5px; }
+.channel-info .meta { color: #888; font-size: 11px; }
+
+.sub-btn {
+    background: #dd1709;
+    color: white;
+    border: 1px solid #c67605;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}

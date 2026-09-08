@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Broadcast Yourself</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a grade de categorias */
+        .categories-content {
+            padding: 10px 0;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .category-card {
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            padding: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .category-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            margin-right: 15px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-family: monospace;
+            font-size: 24px;
+        }
+        .category-icon.glitch {
+            background: repeating-linear-gradient(45deg, #111, #111 2px, #444 2px, #444 4px);
+            color: #cc0000;
+        }
+        .category-info h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .category-info p {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.4;
+        }
+        .category-info .video-count {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho idêntico -->
+        <header>
+            <div class="logo-area">
+                <h1><span class="black-text">You</span><span class="red-box">Tube</span></h1>
+                <span class="slogan">Broadcast Yourself™</span>
+            </div>
+            <div class="top-links">
+                <a href="#">Sign Up</a> | <a href="#">My Account</a> | <a href="#">History</a> | <a href="#">Help</a> | <a href="#">Log In</a>
+            </div>
+        </header>
+
+        <!-- Navegação com a aba Categories ativa -->
+        <nav class="tabs">
+            <a href="index.html" class="tab">Videos</a>
+            <a href="categorias.html" class="tab active">Categories</a>
+            <a href="canais.html" class="tab">Channels</a>
+            <a href="community.html" class="tab">Community</a>
+            <a href="#" class="upload-btn">Upload</a>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" placeholder=" procurar nos arquivos...">
+            <button>Search</button>
+        </div>
+
+        <div class="categories-content">
+            <h2 class="page-title">Browse Categories</h2>
+            
+            <div class="categories-grid">
+                <!-- Categoria 1 -->
+                <div class="category-card">
+                    <div class="category-icon">🎥</div>
+                    <div class="category-info">
+                        <h3><a href="#">Film & Animation (Registros Caseiros)</a></h3>
+                        <p>Fitas VHS encontradas em sótãos, porões e locais abandonados. A qualidade da imagem degrada com o tempo.</p>
+                        <span class="video-count">1,402 videos</span>
+                    </div>
+                </div>
+
+                <!-- Categoria 2 -->
+                <div class="category-card">
+                    <div class="category-icon glitch">⚠️</div>
+                    <div class="category-info">
+                        <h3><a href="#">News & Politics (Avisos de Emergência)</a></h3>
+                        <p>Transmissões do Sistema de Alerta. Fique em casa. Tranque as portas. Não olhe para o céu.</p>
+                        <span class="video-count">304 videos</span>
+                    </div>
+                </div>
+
+                <!-- Categoria 3 -->
+                <div class="category-card">
+                    <div class="category-icon">🔬</div>
+                    <div class="category-info">
+                        <h3><a href="#">Science & Technology (Monitoramento)</a></h3>
+                        <p>Imagens de câmeras de segurança, testes de áudio de baixa frequência e estudos sobre anomalias não catalogadas.</p>
+                        <span class="video-count">856 videos</span>
+                    </div>
+                </div>
+
+                <!-- Categoria 4 -->
+                <div class="category-card">
+                    <div class="category-icon">👤</div>
+                    <div class="category-info">
+                        <h3><a href="#">People & Blogs (Desaparecidos)</a></h3>
+                        <p>Últimos registros conhecidos de usuários que pararam de postar repentinamente. Se você os viu, não tente contato.</p>
+                        <span class="video-count">2,110 videos</span>
+                    </div>
+                </div>
+
+                <!-- Categoria 5 -->
+                <div class="category-card">
+                    <div class="category-icon">🎵</div>
+                    <div class="category-info">
+                        <h3><a href="#">Music (Frequências)</a></h3>
+                        <p>Áudios distorcidos captados em rádios de ondas curtas. Contém ruídos que podem causar desconforto.</p>
+                        <span class="video-count">612 videos</span>
+                    </div>
+                </div>
+
+                <!-- Categoria 6 -->
+                <div class="category-card">
+                    <div class="category-icon">🌲</div>
+                    <div class="category-info">
+                        <h3><a href="#">Travel & Events (Zonas de Exclusão)</a></h3>
+                        <p>Exploração urbana em áreas isoladas pelo governo. O que a neblina está escondendo?</p>
+                        <span class="video-count">428 videos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
